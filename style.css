@@ -3,17 +3,348 @@
  * CSS FILE
  */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  
+}
+/*maybe pur transition:2s linear
+*/
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  
+}
+section{
+  padding: 2rem 9%;
+
+}
+.header{
+  text-align: center;
+  font-size: 4rem;
+  color:black;
+  padding:1rem;
+  margin:2rem 0;
+  background: pink;
+  border-radius: 4rem;
+}
+.btn{
+  display:inline-block;
+  margin-top:1rem;
+  border-radius: 5rem;
+  background:black;
+  color: pink;
+  padding:0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: pink;
+  padding:1 rem;
+  margin: 2rem 0;
+  background: black ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.btn:hover{
+  background:palevioletred ;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  background-color: black;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+
+}
+.logo{
+  font-size: 3rem;
+  color:#333;
+  font-weight: bolder;
+
+}
+.logo{
+  color: pink
+}
+.navbar a{
+  font-size: 1.5rem;
+  padding:0.1rem;
+  color:pink;
+}
+.navbar a:hover{
+  color:var(--pink);
+}
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./images/yeh.png) no-repeat;
+  background-size:cover;
+  background-position: center;
+
+}
+.content{
+  max-width: 50rem;
+}
+.content h3{
+  font-size: 1.5rem;
+  color:black;
+  font-style: italic;
+
+  
+  
+  
+}
+.content small p{
+  font-size: 7.5rem;
+  color:black;
+  padding: 1rem;
+  font-weight: bold;
+
+  
+}
+.content p{
+  font-size: 1rem;
+  color:black;
+
+
+}
+.about .row{
+  display: flex;
+  align-items: enter;
+  gap:2rem;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+
+}
+.about .row .img{
+  flex: 1 1 40rem;
+  position: relative;
+
+}
+.about .row .video img{
+  width: 100% ; 
+  border: 1.5rem solid pink;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 1rem black;
+  height: 100%;
+  object-fit: cover;
+
+}
+.about .row .content{
+  flex: 1 1 40rem;
+
+}
+.about .row .content h3{
+  font-size: 3rem ;
+  color: black;
+
+}
+.about .row .content p{
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+
+}
+.card-container{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:100px;
+
+}
+.card{
+  width:325px;
+  background-color: pink;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px black;
+  margin:20px;
+}
+.card img{
+  width: 100%;
+  height:auto;
+
+}
+.card-content{
+  padding:16px;
+}
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+
+}
+.card-content p{
+color:black;
+font-size: 15px;
+line-height: 1.3;
+}
+.card-content .btn{
+  display:inline-block;
+  padding:8px 16px;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color:pink;
+  
+}
+.card-content .btn:hover{
+  color: palevioletred;
+  cursor: pointer;
+  display:inline-block;
+  background-color: black;
+}
+.container1{
+  width: 100%;
+  min-height: 100vh;
+  background-color:white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 90px;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  border-radius: 3rem;
+}
+.content-section .card1{
+  flex: 1;
+  margin:20px 20px;
+  box-shadow: 0px 2px 8px 0px pink;
+
+}
+.content-section .card1 img{
+  width: 100%;
+  height: auto;
+}
+.content-section .card1 h2{
+  margin: 15px 0px;
+  font-size: 28px;
+  color:black;
+  font-family: sans-serif;
+}
+.content-section .card1 p{
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  
+}
+.btn{
+  display:inline-block;
+  padding:8px 16px;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: pink;
+}
+.feedback-form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.feedback-form h2 {
   text-align: center;
-  color: #023047;
 }
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.cta-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cta-button input[type="submit"] {
+  background-color: black;
+  color: pink;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cta-button input[type="submit"]:hover {
+  background-color:palevioletred;
+}
+footer {
+  background-color: black;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  color: pink;
+}
+
+footer .logo {
+  font-size: 3rem;
+  color: pink;
+  font-weight: bolder;
+}
+
+footer .navbar a {
+  font-size: 1.5rem;
+  padding: 0.1rem;
+  color: pink;
+}
+
+footer .navbar a:hover {
+  color: palevioletred;
+}
+
+footer .copyright {
+  font-size: 1rem;
+  color: pink;
+}
+
